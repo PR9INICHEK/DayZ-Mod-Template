@@ -74,9 +74,7 @@ GameProjectClass {
 				ScriptModulePathClass {
 				Name "workbench"
 					Paths {
-						"scripts/editor/Workbench"
-						"scripts/editor/plugins"
-						"ModTemplate/scripts/editor/plugins"
+						"ModTemplate/Workbench/editor/plugins"
 					} 
 					EntryPoint ""
 				} 

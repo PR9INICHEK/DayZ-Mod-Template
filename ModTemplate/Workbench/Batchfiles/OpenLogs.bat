@@ -5,8 +5,8 @@ SETLOCAL EnableDelayedExpansion
 
 
 REM ////SET THESE FILES////
-set "NPP_Directory=C:\Program Files (x86)\Notepad++\"
-set LogsDir=P:\profiles\Client\
+set "NPP_Directory="C:\Users\Phil\AppData\Local\Programs\Microsoft VS Code\"
+set LogsDir=E:\Missions\SP\Logs\
 REM ///////////////////////
 
 set "LatestFile="
@@ -18,5 +18,5 @@ for /F "delims=|" %%I in ('dir %LogsDir%\*.log /B /O:D') do (
 )
 
 CD /D %NPP_Directory%
-notepad++ %LogsDir%\%LatestFile%
-notepad++ %LogsDir%\%SecondLatestFile%
+Code %LogsDir%\%LatestFile%
+Code %LogsDir%\%SecondLatestFile%

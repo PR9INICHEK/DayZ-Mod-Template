@@ -3,10 +3,10 @@ class CfgPatches
 {
 	class ModTemplate_Scripts
 	{
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Scripts"};
+    units[] = {};
+    weapons[] = {};
+    requiredVersion = 0.1;
+    requiredAddons[] = {"DZ_Scripts"};
 	};
 };
 
@@ -22,10 +22,7 @@ class CfgMods
 		versionPath = "ModTemplate/Scripts/Data/Version.hpp";
 		inputs = "ModTemplate/Scripts/Data/Inputs.xml";
 		type = "mod";
-		dependencies[] =
-		{
-			"Game", "World", "Mission"
-		};
+		dependencies[] = { "Game", "World", "Mission" };
 		class defs
 		{
 			class imageSets
@@ -35,40 +32,24 @@ class CfgMods
 			class engineScriptModule
 			{
 				value = "";
-				files[] =
-				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/1_core"
-				};
+				files[] = {"ModTemplate/Scripts/1_Core"};
 			};
 
 			class gameScriptModule
 			{
 				value="";
-				files[] = 
-				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/3_Game"
-				};
+				files[] = {"ModTemplate/Scripts/3_Game"};
 			};
 			class worldScriptModule
 			{
 				value="";
-				files[] = 
-				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/4_World"
-				};
+				files[] = {"ModTemplate/Scripts/4_World"};
 			};
 
 			class missionScriptModule 
 			{
 				value="";
-				files[] = 
-				{
-					"ModTemplate/scripts/common",
-					"ModTemplate/scripts/5_Mission"
-				};
+				files[] = {"ModTemplate/Scripts/5_Mission"};
 			};
 		};
 	};

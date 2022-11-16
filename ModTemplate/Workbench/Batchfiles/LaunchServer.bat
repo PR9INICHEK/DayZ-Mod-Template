@@ -189,7 +189,7 @@ for %%a in ("%mods:;=" "%") do (
 )
 
 chdir /d "%serverDirectory%"
-echo start %serverEXE% %serverLaunchParams% "-config=%serverConfig%" "%port%" "-profiles=%serverProfileDirectory%" -dologs -adminlog -freezecheck "-scriptDebug=true" "-cpuCount=4" "-mission=%mission%" "-mod=%modList%"
-start %serverEXE% %serverLaunchParams% "-config=%serverConfig%" "%port%" "-profiles=%serverProfileDirectory%" -dologs -adminlog -freezecheck "-scriptDebug=true" "-cpuCount=4" "-mission=%mission%" "-mod=P:/Mods/@Community-Framework;P:/Mods/@BuilderItems;%modList%"
+echo start %serverEXE% %serverLaunchParams% "-config=%serverConfig%" "%port%" "-profiles=%serverProfileDirectory%" -dologs -adminlog -freezecheck "-scriptDebug=true" "-cpuCount=4" "-mission=%mission%" "-mod=P:/Mods/@Community-Framework;P:/Mods/@BuilderItems;%modList%"
+start %serverEXE% %serverLaunchParams% "-config=%serverConfig%" "%port%" "-profiles=%serverProfileDirectory%" "-mission=%mission%" "-mod=E:\ModsForAdmin\@CF;E:\ModsForAdmin\@VPPAdminTools;E:\ModsForAdmin\@VPPNotifications;%modList%"
 
 TIMEOUT /T 5 /NOBREAK
