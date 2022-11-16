@@ -1,5 +1,6 @@
 # DayZ-Mod-Template
 Mod Template for DayZ Standalone. Includes build tools, gproj, and script folders
+Original - https://github.com/Jacob-Mango/DayZ-SampleMod
 
 ### If you are cloning this and the mod already exists
 ```
